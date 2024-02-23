@@ -60,7 +60,7 @@ textarea::placeholder {font-family: Epilogue, sans-serif;}
 
     .right-form
     {
-        width: 85vw !important;
+        width: 100% !important;
         height: 50vh !important;
         grid-column: 1/span 2 !important;
         grid-row: 2/ span 1 !important;
