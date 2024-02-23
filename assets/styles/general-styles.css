@@ -1,6 +1,8 @@
 
 body
 {
+    max-width: 100%;
+    overflow-x: hidden;
     background-color: rgb(255, 253, 250);
     font-family: Epilogue, sans-serif;
     margin : 0;
@@ -25,14 +27,6 @@ main section
 }
 @media screen and (max-width: 600px) {
 
-    .main-headline 
-    {
-    height: 80vw !important;
-    width: 150% !important; 
-    }
-    .headline-text-container h1{
-    font-size: 40px !important;
-    }
     .main-article-grid {
         grid-gap: 1px;
         grid-template-rows: repeat(4,1fr) !important;

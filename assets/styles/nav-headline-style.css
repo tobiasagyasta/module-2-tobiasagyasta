@@ -42,6 +42,14 @@
     display:block;
 }
 @media screen and (max-width: 600px) {
+    .main-headline 
+    {
+    height: auto !important;
+    max-width: 100% !important; 
+    }
+    .headline-text-container h1{
+    font-size: 40px !important;
+    }
     .logo-image
 {
     height: 300px !important;
@@ -63,7 +71,6 @@
 }
 .main-headline
 {
-    overflow: hidden;
     display: flex;
     align-items: stretch;
     background-image:url("/assets/news-items/lesrallizesdenudes.jpg");
