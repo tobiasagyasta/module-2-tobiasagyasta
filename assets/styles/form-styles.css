@@ -50,11 +50,20 @@ textarea::placeholder {font-family: Epilogue, sans-serif;}
     width: 50vw;
     height: 55vh;
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: contain;
 }
 @media screen and (max-width: 600px) {
+    .form-container
+{
+    grid-template-rows: repeat(2, 1fr) !important;
+}
+
     .right-form
     {
+        width: 85vw !important;
+        height: 50vh !important;
+        grid-column: 1/span 2 !important;
+        grid-row: 2/ span 1 !important;
         background-position: center center !important;
     }
 .submit-btn
