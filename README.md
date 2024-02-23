@@ -28,7 +28,9 @@ The headline background image itself is responsive [^1], in which I used media q
 While most of the images were made responsive using media queries, I had one picture styled by using the picture + source + srcset method, replacing the original image with a smaller, cropped image in phone screens.
 ![Responsive Images](assets/readme/srcset.jpg)
 
-The whole website layout is done in grids, with each grid being put in flexbox column sections. In terms of animation, I used the animation method during the fading in of text and images, while transitions are mostly done in hover events.
+The whole website layout is done in grids, with each grid being put in flexbox column sections. 
+
+In terms of animation, I used the animation method during the fading in of text and images, while transitions are mostly done in hover events. I used Javascript to use the IntersectionObserver API so I can execute animations whenever the viewport scrolls in view of the animated element.
 
 
 
