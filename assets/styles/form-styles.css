@@ -19,7 +19,7 @@
     border: 0.5px black solid;
     height: 25px;
     margin:10px;
-    width: 55%;
+    width: 65%;
 }
 .submit-btn
 {
@@ -57,15 +57,6 @@ textarea::placeholder {font-family: Epilogue, sans-serif;}
     {
         background-position: center center !important;
     }
-    .form-field
-{
-    height: 20px !important;
-    width: 55% !important;
-}
-textarea
-{
-    width: 60% !important;
-}
 .submit-btn
 {
     margin-left: 7% !important;
