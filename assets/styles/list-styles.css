@@ -19,6 +19,10 @@ li {
 	overflow: hidden;
 	box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 0.17)
 }
+li a
+{
+	padding-bottom: 20px;
+}
 
 li + li {
 	margin-top: 1rem;
