@@ -32,7 +32,7 @@ The whole website layout is done in grids, with each grid being put in flexbox c
 
 In terms of animation, I used the animation method during the fading in of text and images, while transitions are mostly done in hover events. I used Javascript to use the IntersectionObserver API so I can execute animations whenever the viewport scrolls in view of the animated element.
 
-This website was designed with the maximum of accessibility. It thankfully receives an accesibility rating of 97 through Google Lighthouse as per the current checkpoint.
+This website was designed with the maximum of accessibility. It thankfully receives an accesibility rating of 97 and SEO rating of 92 through Google Lighthouse as per the current checkpoint.
 
 ![Accesibility Rating](assets/readme/acessibility.png)
 
