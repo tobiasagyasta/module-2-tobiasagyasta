@@ -1,0 +1,22 @@
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes text-trans {
+    0% {opacity: 0; translate: 0px 50px 0px;}
+    100% {opacity: 1; translate: 0px 0px 0px;}
+}
+.text-animation
+{
+    opacity: 0;
+    animation: text-trans 1s;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
+}
+.img-animation
+{
+    opacity: 0;
+    animation: fadeIn 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}

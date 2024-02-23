@@ -1,0 +1,18 @@
+@font-face {
+    font-family: Epilogue;
+    src: url("/assets/fonts/epilogue/Variable/Epilogue-Variable.ttf");
+}
+@font-face {
+    font-family: Epilogue;
+    font-style: italic;
+    src: url("/assets/fonts/epilogue/Variable/Epilogue-VariableItalic.ttf");
+}
+@font-face {
+    font-family: Aileron;
+    src: url("/assets/fonts/aileron_0102/Aileron-Light.otf");
+}
+@font-face{
+    font-family: Aileron;
+    font-weight: bold;
+    src: url("/assets/fonts/aileron_0102/Aileron-Black.otf");
+}
