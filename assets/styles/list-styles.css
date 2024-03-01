@@ -13,8 +13,6 @@ li {
 	display: grid;
 	grid-template-columns: minmax(3.75em, auto) 1fr;
 	gap: 0 0.5em;
-	break-inside: avoid;
-    page-break-inside: avoid;
 	border-radius: 0.75rem;
 	overflow: hidden;
 	box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 0.17)

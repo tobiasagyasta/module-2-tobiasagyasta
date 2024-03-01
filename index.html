@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>Toby's Music Journal | A Blog about the Music that Toby likes</title>
     <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon/favicon-32x32.png">
@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/styles/fonts.css">
     <link rel="stylesheet" href="assets/styles/form-styles.css">
     <link rel="stylesheet" href="assets/styles/list-styles.css">
+    <link rel="stylesheet" href="assets/styles/carousel-styles.css">
     <link rel="stylesheet" href="assets/styles/nav-headline-style.css">
     <link rel="stylesheet" href="assets/styles/general-styles.css">
     <link rel="stylesheet" href="assets/styles/animations.css">
@@ -20,13 +21,16 @@
         <div class="nav-wrapper">
             <div class="nav-menu">
                 <img class="animated-image" alt="hamburger button" src="assets/icons/burger-menu-svgrepo-com.svg">
-                <label for="search-bar" class="search-bar">Search article</label>
-                <input class="search-bar" id="search-bar" type="search"></input>
             </div>
-            <div class="nav-light-mode">Lightmode</div>
+            <div class="nav-light-mode">
+                <label for="switch-btn" class="switch">
+                    <input id="switch-btn" onchange="toggleDarkMode()" type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
         </div>
         <div class="nav-logo">
-            <img class="animated-image logo-image" src="assets/news-items/Black and White Modern Vintage Badge Brand Logo.png" alt="Toby's Music Journal logo">
+            <img class="animated-image logo-image" id="logo-image" src="assets/news-items/Black and White Modern Vintage Badge Brand Logo.png" alt="Toby's Music Journal logo">
             <h2 id="tagline"><i>A blog about the music that Toby likes</i></h2></div>
         
     </header>
@@ -44,7 +48,7 @@
         <section class="main-article-grid">
             <div class="news-item1">
                 <img class="animated-image small-image-news-item" src="/assets/news-items/erk-rimpang.jpeg" alt="Efek Rumah Kaca's Rimpang album cover">
-                <h1 class="animated-text">Rimpang : Efek Rumah Kaca's return to the Indonesian indie scene</h1>
+                <h1 class="animated-text title-text">Rimpang : Efek Rumah Kaca's return to the Indonesian indie scene</h1>
                 <p class="animated-text">'Rimpang' was ERK's attempt to return to a simple alternative pop formula. According to Cholil et al, this album tries to convince us that even the smallest political efforts have an impact. How does their message fare during our current election cycle?</p>
             </div>
             <div class="news-item2">
@@ -172,6 +176,43 @@
                             <a href="https://rateyourmusic.com/release/album/jpegmafia-x-danny-brown/scaring-the-hoes/" class="animated-text">Scaring the Hoes</a>
                         </li>
             </div>
+            
+        </section>
+        <h1 class="animated-text new-albums-section-title">February's Top Releases</h1>
+        <section class="new-albums-section animated-image" >
+            <input type="radio" name="position" checked />
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img class="carousel-image animated-image" src="https://e.snmc.io/i/600/w/7b4d6feefa966c63bfcba98f01a2785f/11510926/allie-x-girl-with-no-face-Cover-Art.jpg" alt="Allie X album cover">
+                    <span class="animated-text new-albums-span"><b>Allie-X</b></span><br><br>
+                    <a href="https://rateyourmusic.com/release/album/allie-x/girl-with-no-face/" class="animated-text new-albums-link">Girl With No Face</a>
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-image animated-image" src="https://e.snmc.io/i/600/w/a6d07bfb1747d9bee68491fbea32913a/11812093/acloudyskye-there-must-be-something-here-Cover-Art.jpg" alt="acloudyskye album cover">
+                    <span class="new-albums-span"><b>acloudyskye</b></span><br><br>
+                    <a href="https://rateyourmusic.com/release/album/acloudyskye/there-must-be-something-here/" class="new-albums-link">There Must Be Something Here</a>
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-image animated-image" src="https://e.snmc.io/i/600/w/9919116d6367c698dc9826da6346d7dc/11511397/brittany-howard-what-now-Cover-Art.jpg" alt="Brittany Howard album cover">
+                    <span class="new-albums-span"><b>Brittany Howard</b></span><br><br>
+                    <a href="https://rateyourmusic.com/release/album/brittany-howard/what-now/" class="new-albums-link">What Now</a>
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-image animated-image" src="https://e.snmc.io/i/600/w/2ba8fe869bf5454b36beaf0e4aaeddf6/11443058/job-for-a-cowboy-moon-healer-Cover-Art.jpg" alt="Job for a Cowboy album cover">
+                    <span class="new-albums-span"><b>Job For a Cowboy</b></span><br><br>
+                    <a href="https://rateyourmusic.com/release/album/job-for-a-cowboy/moon-healer/" class=" new-albums-link">Moon Healer</a>
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-image animated-image" src="https://e.snmc.io/i/600/w/256962ee36f4664e323c4d25596f1fac/11806928/grande-mahogany-as-grande-as-Cover-Art.jpg" alt="Grande Mahogany album cover">
+                    <span class="new-albums-span"><b>Grande Mahogany</b></span><br><br>
+                    <a href="https://rateyourmusic.com/release/album/grande-mahogany/as-grande-as/" class=" new-albums-link">As Grande As</a>
+                </div>
+            </div>
+        </section>
         </section>
         <section class="form-section">
             <h1 class="animated-text">Sign Up to our Newsletter!</h1>
@@ -187,7 +228,8 @@
             </div>
         </section>
         <footer class="animated-image">
-            <h4>Toby's Music Journal</h4>
+            <h4>&#127925;Toby's Music Journal&#127925;</h4>
+            <img class="animated-image rise-gif" src="assets/news-items/rise_gif.gif" alt="Gif of Japanese pop star Rise Kujikawa">
             <p><i>&#169;2024 Tobias Agyasta</i></p>
         </footer>
     </main>
