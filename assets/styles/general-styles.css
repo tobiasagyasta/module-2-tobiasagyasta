@@ -29,8 +29,12 @@ body {
 }
 .dark-mode .new-albums-span, .dark-mode .new-albums-link  {
     font-weight: bolder;
-    color: rgba(0, 0, 0, 0.518);
+    color: rgb(255, 253, 250);
   }
+.dark-mode .carousel-item
+{
+  background-color: rgb(28, 28, 28);;
+}
 img {
   opacity: 0;
 }

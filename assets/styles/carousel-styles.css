@@ -44,7 +44,7 @@
       width: 500px;
       height: 525px;
       border-radius: 1rem;
-      background-color: coral;
+      background-color: rgb(255, 253, 250);
       --r: calc(var(--position) - var(--offset));
       --abs: max(calc(var(--r) * -1), var(--r));
       transition: all 0.25s linear;
@@ -61,23 +61,22 @@
   }
   .carousel-item:nth-of-type(1) {
       --offset: 1;
-      background-color: #DDE0BD;
+      
     }
     .carousel-item:nth-of-type(2) {
       --offset: 2;
-      background-color: #9F7E69;
+    
     }
     .carousel-item:nth-of-type(3) {
       --offset: 3;
-      background-color: #ED6A5A;
+    
     }
     .carousel-item:nth-of-type(4) {
       --offset: 4;
-      background-color: #C8FFBE;
+     
     }
     .carousel-item:nth-of-type(5) {
       --offset: 5;
-      background-color: #C37D92;
     }
     
     input[type="radio"]:nth-of-type(1) {
