@@ -14,47 +14,47 @@ In order to deploy from Github to Netlify, and connect my project to a custom do
 ### Deploying through Netlify and Connecting a Custom Domain
 1. With my Github account, I signed up to [Netlify](https://app.netlify.com/signup), a development platform used to build and deploy websites.
 
-![Sign-up Image](assets/readme/sign-up.png)
+<kbd>![Sign-up Image](assets/readme/sign-up.png)</kbd>
 
 2. After logging in, I selected the **Add new site** option and selected **Import an existing project**
 
-![Add new site image](assets/readme/import-existing.png)
+<kbd>![Add new site image](assets/readme/import-existing.png)</kbd>
 
 3. I select **Deploy with Github**
 
-![Deploy with Github image](assets/readme/deploywithghub.png)
+<kbd>![Deploy with Github image](assets/readme/deploywithghub.png)</kbd>
 
 4. Then, I selected the project repo to be deployed.
 
-![Selected repo image](assets/readme/selected-repo.png)
+<kbd>![Selected repo image](assets/readme/selected-repo.png)</kbd>
 
 5. I have enabled auto-deployment in Netlify, and the app will automatically deploy the website every time a new commit was pushed from me.
 
-![Auto-deploy image](assets/readme/automatic-deployment.png)
+<kbd>![Auto-deploy image](assets/readme/automatic-deployment.png)</kbd>
 
 6. Then, I went and bought my custom domain through [Niagahoster](https://www.niagahoster.co.id/domain-murah). In my case, I bought the domain: *tobiashalomoan.site*
 
-![Niagahoster buy domain](assets/readme/niagahoster-domain-buy.png)
+<kbd>![Niagahoster buy domain](assets/readme/niagahoster-domain-buy.png)</kbd>
 
 7. I went to my Netlify account, and selected the **Domains** option, and chose **Add a Domain**
 
-![Adding domain](assets/readme/adding-domain.png)
+<kbd>![Adding domain](assets/readme/adding-domain.png)</kbd>
 
 8. After linking the Netlify project to the custom domain, it will show this progress, with the warning *Awaiting external DNS*
 
-![Awaiting](assets/readme/waiting-dns-propagation.png)
+<kbd>![Awaiting](assets/readme/waiting-dns-propagation.png)</kbd>
 
 9. In order to properly configure the netlify deployment and the custom domain, the DNS of the custom domain from the Niagahoster hosting providers needs to be pointed to Netlify's name servers
 
-![DNS Pointer](assets/readme/dns_config_1.png)
+<kbd>![DNS Pointer](assets/readme/dns_config_1.png)</kbd>
 
 10. So, I went to my Domains page in Niagahoster, and changed my nameservers to the ones shown above.
 
-![DNS Point Niagahoster](assets/readme/dns_config_niagahoster.png)
+<kbd>![DNS Point Niagahoster](assets/readme/dns_config_niagahoster.png)</kbd>
 
 11. After waiting for DNS propagation in ~20 minutes, the status of the domain in Netlify will change to the picture below. Now my Netlify deploys have finally been connected to a custom domain! :grin::grin:
 
-![Final status success](assets/readme/Final.png)
+<kbd>![Final status success](assets/readme/Final.png)</kbd>
 
 ## About
 
@@ -81,9 +81,11 @@ The whole website layout is done in grids, with each grid being put in flexbox c
 In terms of animation, I used the animation method during the fading in of text and images, while transitions are mostly done in hover events. I used Javascript to use the IntersectionObserver API so I can execute animations whenever the viewport scrolls in view of the animated element.
 
 In week two, I added a light/dark mode that sets a localStorage value in Javascript in order to save the mode whenever a user opens the website after the first time.
+
 ![Dark mode](assets/readme/dark-mode.png)
 
 I also added a nice image carousel with only HTML and CSS.
+
 ![Carousel image](assets/readme/carousel.png)
 
 This website was designed with the maximum of accessibility. It receives an accessibility rating of 91 :
